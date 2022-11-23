@@ -1,13 +1,9 @@
 {
-	"name": "Image Replacer",
-	"description": "Replace all images with whatever you want.",
-	"author": "MysteryPancake",
-	"manifest_version": 2,
-	"version": "1.4",
-	"browser_action": {
-		"default_title": "Image Replacer",
-		"default_popup": "index.html"
-	},
+	"name": "Image replacer",
+	"description": "Replace one image with another.",
+	"author": "nielsdelporte",
+	"manifest_version": 3,
+	"version": "1.5",
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
@@ -16,12 +12,12 @@
 			"all_frames": true
 		}
 	],
-	"homepage_url": "https://github.com/MysteryPancake/Image-Replacer",
+	"homepage_url": "https://github.com/nielsdelporte/Image-Replacer",
 	"icons": {
 		"16": "icon16.png",
 		"48": "icon48.png",
 		"128": "icon128.png"
 	},
-	"permissions": ["storage"],
+	"permissions": ["storage","activeTab","scripting"],
 	"short_name": "Image Replacer"
 }
